@@ -1,12 +1,19 @@
-import Header from "./components/Header";
+import React, { Fragment } from "react";
+import Header from "./components/Layout/Header.jsx";
+import Meals from "./components/Meals/Meals.jsx";
+
+
 function App() {
 
   return (
-    <>
-      <h1>Restaurant Website</h1>
+    <Fragment>
       <Header />
-    </>
-  )
-}
+      <main>
+        <Meals />
+      </main>
 
-export default App
+    </Fragment>
+  );
+};
+
+export default App;
